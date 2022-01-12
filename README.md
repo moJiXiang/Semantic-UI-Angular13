@@ -41,7 +41,9 @@ ng generate component components/my-lib
 
 ## Build
 
+```
 yarn build:library
+```
 
 ## Develop
 
