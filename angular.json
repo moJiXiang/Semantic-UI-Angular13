@@ -3,7 +3,20 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pixowor-ui1": {
+    "pixowor-ui-library": {
+      "root": "src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "src/app/components/ng-package.json",
+            "tsConfig": "src/app/components/tsconfig.lib.json"
+          }
+        }
+      }
+    },
+    "pixowor-ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,19 +33,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pixowor-ui1",
+            "outputPath": "dist/pixowor-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -72,10 +80,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pixowor-ui1:build:production"
+              "browserTarget": "pixowor-ui:build:production"
             },
             "development": {
-              "browserTarget": "pixowor-ui1:build:development"
+              "browserTarget": "pixowor-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +91,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pixowor-ui1:build"
+            "browserTarget": "pixowor-ui:build"
           }
         },
         "test": {
@@ -94,18 +102,13 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }
       }
     }
   },
-  "defaultProject": "pixowor-ui1"
+  "defaultProject": "pixowor-ui"
 }
