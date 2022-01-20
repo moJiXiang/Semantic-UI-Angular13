@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "page": "mv dist/semantic-ui-angular13 ../semantic-ui-angular13.github.io",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:library": "ng build semantic-ui-angular13-library"
