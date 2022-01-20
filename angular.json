@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pixowor-ui-library": {
+    "semantic-ui-angular13-library": {
       "root": "src",
       "projectType": "library",
       "architect": {
@@ -16,7 +16,7 @@
         }
       }
     },
-    "pixowor-ui": {
+    "semantic-ui-angular13": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -33,7 +33,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pixowor-ui",
+            "outputPath": "dist/semantic-ui-angular13",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -83,10 +83,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pixowor-ui:build:production"
+              "browserTarget": "semantic-ui-angular13:build:production"
             },
             "development": {
-              "browserTarget": "pixowor-ui:build:development"
+              "browserTarget": "semantic-ui-angular13:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,7 +94,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pixowor-ui:build"
+            "browserTarget": "semantic-ui-angular13:build"
           }
         },
         "test": {
@@ -113,5 +113,5 @@
       }
     }
   },
-  "defaultProject": "pixowor-ui"
+  "defaultProject": "semantic-ui-angular13"
 }
