@@ -13,12 +13,11 @@
   (focus)="onFocus.emit($event)"
   (blur)="onBlur.emit($event)"
 >
-  <ng-container *ngIf="icon">
-    <i
-      [class]="icon"
-      [ngClass]="{ icon: true, right: iconPos === 'right' }"
-    ></i>
-  </ng-container>
+  <i
+    *ngIf="icon"
+    [class]="icon"
+    [ngClass]="{ icon: true, right: iconPos === 'right' }"
+  ></i>
   <ng-container *ngIf="label">
     {{ label }}
   </ng-container>

@@ -1,9 +1,17 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'sm-button',
   templateUrl: './sm-button.component.html',
   styleUrls: ['./sm-button.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SmButtonComponent implements OnInit {
   @Input() type: string = 'button';
