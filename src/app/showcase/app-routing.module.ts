@@ -9,6 +9,13 @@ const routes: Routes = [
         (m) => m.ButtonDemoModule
       ),
   },
+  {
+    path: 'divider',
+    loadChildren: () =>
+      import('./components/dividerdemo/dividerdemo.module').then(
+        (m) => m.DividerDemoModule
+      ),
+  },
 ];
 
 @NgModule({

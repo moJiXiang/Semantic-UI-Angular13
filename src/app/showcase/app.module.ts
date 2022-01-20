@@ -8,6 +8,8 @@ import { PixTagModule } from '../components/pix-tag/pix-tag.module';
 import { SmButtonModule } from '../components/sm-button/sm-button.module';
 import { SmSidebarModule } from '../components/sm-sidebar/sm-sidebar.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { DividerdemoComponent } from './components/dividerdemo/dividerdemo.component';
+import { SmDividerModule } from '../components/sm-divider/sm-divider.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +19,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     PixButtonModule,
     PixTagModule,
     SmSidebarModule,
+    SmDividerModule,
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],

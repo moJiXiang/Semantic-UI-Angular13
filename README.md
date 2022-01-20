@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Add new ui library component under app/components folder
 
 ```
-ng generate component components/my-lib
+ng generate component components/my-lib --skip-import
 ```
 
 Then you need add three file **my-lib.module.ts**, **ng-package.json**, **public_api.ts** for ng-packagr build tools

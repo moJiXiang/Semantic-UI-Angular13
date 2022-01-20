@@ -16,5 +16,11 @@ export class AppComponent {
       routerLink: 'button',
       disabled: false,
     },
+    {
+      label: 'DividerDemo',
+      iconClass: 'home',
+      routerLink: 'divider',
+      disabled: false,
+    },
   ];
 }
