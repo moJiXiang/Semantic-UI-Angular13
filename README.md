@@ -1,10 +1,10 @@
-# PixoworUi
+# Semantic UI Angular13
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` or `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -26,39 +26,22 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Create angular library
-
-https://indepth.dev/posts/1193/create-your-standalone-angular-library-in-10-minutes
-
-## Create new ui library component
+## Add new ui library component under app/components folder
 
 ```
 ng generate component components/my-lib
-
 ```
 
-需要手动添加 **my-lib.module.ts**, **ng-package.json**, **public_api.ts**三个文件
+Then you need add three file **my-lib.module.ts**, **ng-package.json**, **public_api.ts** for ng-packagr build tools
 
-## Build
+## Build library
 
 ```
 yarn build:library
 ```
 
-## Develop
-
-本地调试
+## Run demo page
 
 ```
 yarn start
-```
-
-其他项目依赖 pixowor-ui
-
-```
-1. cd dist
-2. npm pack
-3. cd ../pixowor-ui-demo
-4. yarn add ../pixowor-ui/dist/pixowor-ui-0.0.3.tgz
-
 ```
