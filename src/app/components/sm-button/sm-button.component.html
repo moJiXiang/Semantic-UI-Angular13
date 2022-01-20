@@ -1,0 +1,25 @@
+<button
+  [attr.type]="type"
+  [class]="class"
+  [ngClass]="{
+    ui: true,
+    loading: loading,
+    right: iconPos === 'right',
+    labeled: !!label && !!icon,
+    icon: !!icon,
+    button: true
+  }"
+  (click)="onClick.emit($event)"
+  (focus)="onFocus.emit($event)"
+  (blur)="onBlur.emit($event)"
+>
+  <ng-container *ngIf="icon">
+    <i
+      [class]="icon"
+      [ngClass]="{ icon: true, right: iconPos === 'right' }"
+    ></i>
+  </ng-container>
+  <ng-container *ngIf="label">
+    {{ label }}
+  </ng-container>
+</button>
