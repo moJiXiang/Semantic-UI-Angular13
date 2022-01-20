@@ -34,6 +34,14 @@ ng generate component components/my-lib --skip-import
 
 Then you need add three file **my-lib.module.ts**, **ng-package.json**, **public_api.ts** for ng-packagr build tools
 
+## Add component showcase page
+
+```
+ng generate component showcase/components/mylibdemo --skip-import
+```
+
+Then need add **mylibdemo-routing.module.ts**, **mylibdemo.module.ts** files
+
 ## Build library
 
 ```

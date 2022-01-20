@@ -16,6 +16,13 @@ const routes: Routes = [
         (m) => m.DividerDemoModule
       ),
   },
+  {
+    path: 'flag',
+    loadChildren: () =>
+      import('./components/flagdemo/flagdemo.module').then(
+        (m) => m.FlagDemoModule
+      ),
+  },
 ];
 
 @NgModule({

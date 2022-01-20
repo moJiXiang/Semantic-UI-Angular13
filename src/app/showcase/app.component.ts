@@ -22,5 +22,11 @@ export class AppComponent {
       routerLink: 'divider',
       disabled: false,
     },
+    {
+      label: 'FlagDemo',
+      iconClass: 'flag',
+      routerLink: 'flag',
+      disabled: false,
+    },
   ];
 }
