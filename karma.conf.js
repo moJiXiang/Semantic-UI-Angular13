@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true, // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require("path").join(__dirname, "./coverage/pixowor-ui"),
+      dir: require("path").join(__dirname, "./coverage/semantic-ui-angular13"),
       subdir: ".",
       reporters: [{ type: "html" }, { type: "text-summary" }],
     },

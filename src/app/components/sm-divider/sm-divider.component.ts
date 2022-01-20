@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sm-divider',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sm-divider.component.scss'],
 })
 export class SmDividerComponent implements OnInit {
+  @Input() direction: 'horizontal' | 'vertical' = 'horizontal';
+
+  @Input() iconClass: string;
+
+  @Input() label: string;
+
   constructor() {}
 
   ngOnInit(): void {}

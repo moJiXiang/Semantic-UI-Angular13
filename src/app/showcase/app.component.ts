@@ -7,7 +7,7 @@ import { MenuItem } from '../components/sm-sidebar/sm-sidebar.component';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'pixowor-ui';
+  title = 'semantic-ui-angular13';
 
   menus: MenuItem[] = [
     {

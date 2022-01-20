@@ -1,1 +1,12 @@
-<div class="ui divider"></div>
+<div
+  [ngClass]="{
+    ui: true,
+    divider: true,
+    horizontal: label && direction === 'horizontal',
+    vertical: label && direction === 'vertical',
+    header: !!iconClass
+  }"
+>
+  <i *ngIf="iconClass" [class]="iconClass" [ngClass]="{ icon: true }"></i>
+  <ng-container *ngIf="label">{{ label }}</ng-container>
+</div>

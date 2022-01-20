@@ -1,16 +1,17 @@
 {
-  "name": "pixowor-ui",
+  "name": "semantic-ui-angular13",
   "version": "0.0.1",
   "keywords": [
     "angular"
   ],
   "license": "MIT",
-  "module": "pixowor-ui.js",
-  "typings": "pixowor-ui.d.ts",
+  "module": "semantic-ui-angular13.js",
+  "typings": "semantic-ui-angular13.d.ts",
   "peerDependencies": {
     "@angular/animations": "~13.1.0",
     "@angular/common": "~13.1.0",
     "@angular/forms": "~13.1.0",
+    "@angular/router": "~13.1.0",
     "rxjs": "~7.4.0",
     "zone.js": "~0.11.4"
   }

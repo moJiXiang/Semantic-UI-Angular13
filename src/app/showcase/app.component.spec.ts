@@ -16,10 +16,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'pixowor-ui'`, () => {
+  it(`should have as title 'semantic-ui-angular13'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('pixowor-ui');
+    expect(app.title).toEqual('semantic-ui-angular13');
   });
 
   it('should render title', () => {
@@ -27,7 +27,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'pixowor-ui app is running!'
+      'semantic-ui-angular13 app is running!'
     );
   });
 });
